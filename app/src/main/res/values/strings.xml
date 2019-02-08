@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">VentasCalc</string>
+    <string name="productos">Producto: </string>
+    <string name="precio">Precio: </string>
+    <string name="cantidad">Cantidad: </string>
+    <string name="tipo">Tipo: </string>
+    <string name="agregar">Agregar</string>
+    <string name="calcular">Calcular</string>
+    <string name="cantidadPlain">cantidad</string>
+    <string name="colonSign">₡</string>
+    <string-array name="productoslist">
+        <item>Pati</item>
+        <item>Cocada</item>
+        <item>Plantinta</item>
+    </string-array>
+    <string-array name="tipoList">
+        <item>Venta</item>
+        <item>Deuda</item>
+        <item>Gasto</item>
+        <item>Faltante</item>
+    </string-array>
+
+    <string name="Ganancias_totales">Ganancias Totales</string>
+    <string name="Ventas_total">Venta Total</string>
+    <string name="Alisson">Alisson:</string>
+    <string name="Reinerio">Reinerio:</string>
+    <string name="Dinero">Dinero...</string>
+    <string name="Information_ventas">Información Ventas</string>
+    <string name="productosPlural">Productos:</string>
+    <string name="productPlain">Producto</string>
+    <string name="deudas">Deudas:</string>
+    <string name="ganancias_obtenidas">Ganancias Obtenidas</string>
+    <string name="dinero_total">Dinero Total:</string>
+    <string name="ganancias_alisson">Ganancias Alisson:</string>
+    <string name="ganancias_alisson_deudas_canceladas">Ganancias Alisson con Deudas Canceladas</string>
+</resources>

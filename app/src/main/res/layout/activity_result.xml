@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:id="@+id/bodyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/GananciasTotalTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:text="@string/Ganancias_totales"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/AlissonGananciaTotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/GananciasTotalTitleText"
+                android:layout_margin="10dp"
+                android:text="@string/Alisson"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ReinerioGananciaTotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/AlissonGananciaTotalText"
+                android:layout_margin="10dp"
+                android:text="@string/Reinerio"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colorSign1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/AlissonGananciaTotalText"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/AlissonGananciaTotalText"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colorSign2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/ReinerioGananciaTotalText"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/AlissonGananciaTotalText"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/GananciaTotalAlissonMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/AlissonGananciaTotalText"
+                android:layout_toEndOf="@id/colorSign1"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/GananciaTotalReinerioMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/ReinerioGananciaTotalText"
+                android:layout_toEndOf="@id/colorSign2"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/InformationVentasTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/ReinerioGananciaTotalText"
+                android:layout_margin="10dp"
+                android:text="@string/Information_ventas"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deudaInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productCocadaCantidadInfo"
+                android:layout_margin="10dp"
+                android:text="@string/deudas"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaPatiCantidadInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deudaInfoText"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cantidadPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaPatiInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaPatiCantidadInfo"
+                android:layout_toEndOf="@id/productPatiCantidadInfo"
+                android:text="@string/productPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaPatiPrizeInfo"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/deudaPatiInfo"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaPatiPrizeInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaPatiCantidadInfo"
+                android:layout_toEndOf="@id/colonSign3"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaPlantintaCantidadInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deudaPatiCantidadInfo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cantidadPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaPlantintaInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaPlantintaCantidadInfo"
+                android:layout_toEndOf="@id/deudaPlantintaCantidadInfo"
+                android:text="@string/productPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaPlantintaPrizeInfo"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/deudaPlantintaInfo"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaPlantintaPrizeInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaPlantintaCantidadInfo"
+                android:layout_toEndOf="@id/colonSign4"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaCocadaCantidadInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deudaPlantintaCantidadInfo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cantidadPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaCocadaInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaCocadaCantidadInfo"
+                android:layout_toEndOf="@id/deudaCocadaCantidadInfo"
+                android:text="@string/productPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaCocadaPrizeInfo"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/deudaCocadaInfo"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/deudaCocadaPrizeInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/deudaCocadaCantidadInfo"
+                android:layout_toEndOf="@id/colonSign5"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ProductsInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/InformationVentasTitleText"
+                android:layout_margin="10dp"
+                android:text="@string/productosPlural"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productPatiCantidadInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProductsInfoText"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cantidadPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productPatiInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productPatiCantidadInfo"
+                android:layout_toEndOf="@id/productPatiCantidadInfo"
+                android:text="@string/productPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productPatiPrizeInfo"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/productPatiInfo"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productPatiPrizeInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productPatiCantidadInfo"
+                android:layout_toEndOf="@id/colonSign3"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productPlantintaCantidadInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productPatiCantidadInfo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cantidadPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productPlantintaInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productPlantintaCantidadInfo"
+                android:layout_toEndOf="@id/productPlantintaCantidadInfo"
+                android:text="@string/productPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productPlantintaPrizeInfo"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/productPlantintaInfo"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productPlantintaPrizeInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productPlantintaCantidadInfo"
+                android:layout_toEndOf="@id/colonSign4"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productCocadaCantidadInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productPlantintaCantidadInfo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cantidadPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productCocadaInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productCocadaCantidadInfo"
+                android:layout_toEndOf="@id/productCocadaCantidadInfo"
+                android:text="@string/productPlain"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productCocadaPrizeInfo"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/productCocadaInfo"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productCocadaPrizeInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/productCocadaCantidadInfo"
+                android:layout_toEndOf="@id/colonSign5"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/GananciasObtenidasTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/deudaCocadaCantidadInfo"
+                android:layout_margin="10dp"
+                android:text="@string/ganancias_obtenidas"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DineroTotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/GananciasObtenidasTitleText"
+                android:layout_margin="10dp"
+                android:text="@string/dinero_total"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/DineroTotalText"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/DineroTotalText"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/DineroTotalDinero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/colonSign9"
+                android:layout_toEndOf="@id/colonSign9"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/GananciasAlissonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DineroTotalText"
+                android:layout_margin="10dp"
+                android:text="@string/ganancias_alisson"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/colonSign10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/GananciasAlissonText"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/GananciasAlissonText"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/GananciasAlissonDinero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/colonSign10"
+                android:layout_toEndOf="@id/colonSign10"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/GananciasAlissonObtenibleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/GananciasAlissonText"
+                android:layout_margin="10dp"
+                android:width="160dp"
+                android:text="@string/ganancias_alisson_deudas_canceladas"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/colonSign11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/GananciasAlissonObtenibleText"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/GananciasAlissonObtenibleText"
+                android:text="@string/colonSign"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/GananciasAlissonObtenibleDinero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/colonSign11"
+                android:layout_toEndOf="@id/colonSign11"
+                android:text="@string/Dinero"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
